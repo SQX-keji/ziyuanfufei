@@ -1,0 +1,114 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/index/search/index",
+			"style": {
+				"navigationBarTitleText": "搜索"
+			}
+		},
+		{
+			"path": "pages/index/course/courseDet",
+			"style": {
+				"navigationBarTitleText": "课程详情"
+			}
+		},
+
+		{
+			"path": "pages/learn/index",
+			"style": {
+				"navigationBarTitleText": "学习"
+			}
+		},
+
+		{
+			"path": "pages/me/index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/me/message/index",
+			"style": {
+				"navigationBarTitleText": "消息中心",
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"navigationBarTextStyle": "white" // 状态栏字体为白色，只能为 white-白色，black-黑色 二选一
+			}
+		},
+		{
+			"path": "pages/me/integral/index",
+			"style": {
+				"navigationBarTitleText": "我的积分"
+			}
+		},
+		{
+			"path": "pages/me/order/index",
+			"style": {
+				"navigationBarTitleText": "我的订单"
+			}
+		},
+		{
+			"path": "pages/me/invite/index",
+			"style": {
+				"navigationBarTitleText": "我的邀请"
+			}
+		},
+		{
+			"path": "pages/me/invite/inviteDet",
+			"style": {
+				"navigationBarTitleText": "邀请战绩"
+			}
+		},
+		{
+			"path": "pages/me/vip/index",
+			"style": {
+				"navigationBarTitleText": "会员中心"
+			}
+		},
+		{
+			"path": "pages/me/setting/index",
+			"style": {
+				"navigationBarTitleText": "设置"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "省钱兄资源付费",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#909399",
+		"selectedColor": "#5074FF",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/首页@2x.png",
+				"selectedIconPath": "static/tabbar/首页点击@2x.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/learn/index",
+				"iconPath": "static/tabbar/学习@2x.png",
+				"selectedIconPath": "static/tabbar/学习点击@2x.png",
+				"text": "学习"
+			},
+			{
+				"pagePath": "pages/me/index",
+				"iconPath": "static/tabbar/我的@2x.png",
+				"selectedIconPath": "static/tabbar/我的点击@2x.png",
+				"text": "我的"
+			}
+		]
+	}
+}
